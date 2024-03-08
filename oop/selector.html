@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      .hs-photo {
+        width: 500px;
+        position: fixed;
+        right: 0;
+        top: 100px;
+        transform: translate(100%);
+      }
+      .hs-photo.active {
+        transform: translate(0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="aa bb cc">Js Query Selector</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint deserunt
+      dolor, consequuntur porro atque libero, non quo itaque quia repudiandae
+      vel quas repellat iure facilis asperiores aliquid. Eligendi, nisi fugit!
+    </p>
+
+    <a href="https://mms-it.com" id="link1">MMSIT</a>
+    <a href="https://google.com" id="link2">GOOGLE</a>
+
+    <img src="../image/coffee.jpg" id="buddih" alt="" />
+
+    <button onclick="changeImg('../image/buddih.jpg')">img1</button>
+    <button onclick="changeImg('../image/marine.jpg')">img2</button>
+    <button onclick="changeImg('../image/coffee.jpg')">img3</button>
+
+    <hr />
+
+    <button onclick="toggleImg()">toggle</button>
+    <img
+      class="hs-photo"
+      src="../image/Photography-trends-and-techniques-_fantasy.jpg"
+      alt=""
+    />
+
+    <ul>
+      <li class="a">Apple</li>
+      <li class="b">Orange</li>
+
+      <li class="c">Mango</li>
+    </ul>
+    <form action="">
+      <input type="text" id="yourName" name="your_name" />
+      <br /><br />
+      <div>
+        <label for="">Gender</label>
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="male" />
+        </div>
+      </div>
+    </form>
+    <script src="../js/selector.js"></script>
+  </body>
+</html>
